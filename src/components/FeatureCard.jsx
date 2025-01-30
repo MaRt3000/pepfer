@@ -26,13 +26,13 @@ const FeatureCard = ({
 
           <div className="space-y-8">
             <div className="flex gap-4">
-              <img className="block lg:hidden " src={card2} alt="" />
+              {/* <img className="block lg:hidden " src={card2} alt="" /> */}
               <img src={card} alt="" />
             </div>
-            <div className="block lg:hidden space-y-2 font-['Inter']">
+            {/* <div className="block lg:hidden space-y-2 font-['Inter']">
               <h4 className="text-[#027A48] font-['Inter']">{subTitle2}</h4>
               <img className="block lg:hidden " src={card3} alt="" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

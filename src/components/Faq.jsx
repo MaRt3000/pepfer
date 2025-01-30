@@ -68,18 +68,18 @@ const Faq = () => {
   };
 
   return (
-    <div className="p-2 lg:p-8 space-y-4 bg-[#F8FCF9] hidden lg:block font-['Inter'] ">
-      <div className="space-y-4 mx-8  pb-4 border-b border-[#D0D5DD]">
+    <div className="p-2 lg:p-8 space-y-4 bg-[#F8FCF9] font-['Inter'] ">
+      <div className="space-y-4 mx-4 lg:mx-5  pb-4 border-b border-[#D0D5DD]">
         <h2 className="text-[#2E6F40] text-2xl md:text-3xl lg:text-4xl font-bold">
           FAQs
         </h2>
         <p className="text-lg ">Frequently Asked Questions</p>
       </div>
 
-      <div className="flex-1 flex flex-col gap-4 rounded-lg p-6">
+      <div className="flex-1 flex flex-col gap-4 rounded-lg p-4 lg:p-6">
         {faqs.map((faq, index) => (
           <div key={index}>
-            <div className="p-4  flex flex-col gap-4 pb-4 border-b border-[#D0D5DD]">
+            <div className="py-4  flex flex-col gap-4 pb-4 border-b border-[#D0D5DD]">
               <button
                 className="w-full flex justify-between items-center text-left focus:outline-none  "
                 onClick={() => toggleQuestion(index)}

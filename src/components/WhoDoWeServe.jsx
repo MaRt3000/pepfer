@@ -8,7 +8,7 @@ const WhoDoWeServe = () => {
       id="who-we-serve"
       className="bg-[#F8FCF9] p-4 lg:p-8 space-y-10  flex flex-col items-center font-['Inter']"
     >
-      <div className="space-y-8 w-full md:w-[60%] text-center">
+      <div className="space-y-8 w-full md:w-[60%] text-start lg:text-center">
         <h2 className="text-2xl font-bold lg:text-5xl text-[var(--Color-Green-500,#2E6F40)] font-['Poppins']">
           Who do we Serve?
         </h2>
