@@ -57,13 +57,13 @@ const WhatWeOffer = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div className="space-y-14 font-['Inter']">
-          <div className="flex items-start justify-start gap-2 md:gap-0 lg:gap-6 pt-8 ">
+          <div className="flex items-start justify-start gap-0 md:gap-0 lg:gap-6 pt-8 ">
             <img
-              className="mt-[-15px] ml-[-25px] md:ml-[-35px]  lg:ml-[-30px] w-[30%] "
+              className="mt-[-15px] ml-[-33px] md:ml-[-35px]  lg:ml-[-30px] w-[30%] "
               src={hivicon}
               alt=""
             />
-            <div className="space-y-4 pb-8 border-b border-[#B7E1C3] ">
+            <div className="space-y-4 pb-8 border-b border-[#B7E1C3] ml-[-22px] lg:ml-0">
               <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold">
                 Confidential HIV Services
               </h3>

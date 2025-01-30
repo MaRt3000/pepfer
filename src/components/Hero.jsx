@@ -1,7 +1,7 @@
 import React from "react";
 import FeatureCard from "./FeatureCard";
 import Store from "../assets/Store.svg";
-import hero from "../assets/hero.svg";
+import hero from "../assets/hero.gif";
 import applestore from "../assets/applestore.svg";
 import barcode from "../assets/barcode.svg";
 
