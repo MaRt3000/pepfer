@@ -12,7 +12,7 @@ const TheMovement = () => {
       <img
         src={movement}
         alt="Hero"
-        className="w-full  max-w-md md:max-w-lg lg:max-w-xl mb-6 lg:hidden"
+        className="w-full   lg:max-w-xl mb-6 lg:hidden"
       />
       <FeatureCard
         title="Join the Movement"

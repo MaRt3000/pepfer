@@ -68,7 +68,7 @@ const Faq = () => {
   };
 
   return (
-    <div className="p-2 lg:p-8 space-y-4 bg-[#F8FCF9] font-['Inter'] ">
+    <div className="p-2 pb-8 lg:p-8 space-y-4 bg-[#F8FCF9] font-['Inter'] ">
       <div className="space-y-4 mx-4 lg:mx-5  pb-4 border-b border-[#D0D5DD]">
         <h2 className="text-[#2E6F40] text-2xl md:text-3xl lg:text-4xl font-bold">
           FAQs

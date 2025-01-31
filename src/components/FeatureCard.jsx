@@ -27,7 +27,9 @@ const FeatureCard = ({
           <div className="space-y-8">
             <div className="flex gap-4">
               {/* <img className="block lg:hidden " src={card2} alt="" /> */}
-              <img src={card} alt="" />
+              <a href="https://play.google.com/store/apps/details?id=com.vibes360.app">
+                <img src={card} alt="" />
+              </a>
             </div>
             {/* <div className="block lg:hidden space-y-2 font-['Inter']">
               <h4 className="text-[#027A48] font-['Inter']">{subTitle2}</h4>
@@ -37,11 +39,7 @@ const FeatureCard = ({
         </div>
       </div>
       <div className="w-[100%]">
-        <img
-          className=" hidden w-full max-w-md md:max-w-lg lg:max-w-xl mb-6 lg:block"
-          src={image}
-          alt=""
-        />
+        <img className=" hidden w-full  mb-6 lg:block" src={image} alt="" />
       </div>
     </div>
   );

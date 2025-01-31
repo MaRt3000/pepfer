@@ -93,8 +93,8 @@ const Nav = () => {
         style={{ top: "64px" }} // Adjust this value to match the height of your header
       >
         <div className="flex flex-col items-center justify-center h-full">
-          <ul className="text-[#667085] text-center">
-            <li className="hover:bg-blue-100 transition duration-300 p-4">
+          <ul className="text-[#667085] text-center text-4xl space-y-8">
+            <li className="hover:bg-blue-100 transition duration-300 p-4 ">
               <a
                 href="#home"
                 onClick={closeMenu}

@@ -34,13 +34,13 @@ const WhatWeOffer = () => {
         </p>
       </div>
 
-      <div className="w-[300px] h-[300px] md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[550px] rounded-4xl bg-[#EDF8F0] relative   max-w-md md:max-w-lg lg:max-w-xl mb-6 lg:hidden">
+      <div className="w-full h-[24rem]  md:h-[700px] lg:w-[600px] lg:h-[550px] rounded-4xl bg-[#EDF8F0] relative    lg:max-w-xl mb-6 lg:hidden">
         <img className="w-[50%] lg:w-[50%] rounded-4xl" src={Vector1} alt="" />
         <div>
           {images.map((image, index) => (
             <img
               key={index}
-              className={`absolute top-8 left-23 md:top-12 md:left-35 w-[40%] lg:left-51 lg:w-[36%] ${
+              className={`absolute top-[10%] left-[30%] md:top-12 md:left-58 w-[40%] lg:left-51 lg:w-[36%] ${
                 index === currentIndex ? "opacity-100" : "opacity-0"
               }`}
               src={image}
@@ -100,7 +100,7 @@ const WhatWeOffer = () => {
             </div>
           </div>
         </div>
-        <div className=" hidden w-[300px] h-[300px] md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] rounded-4xl bg-[#EDF8F0] relative lg:block">
+        <div className=" hidden w-[300px] h-[300px] md:w-[500px] md:h-[500px] lg:w-full lg:h-[600px] rounded-4xl bg-[#EDF8F0] relative lg:block">
           <img
             className="w-[50%] lg:w-[50%] rounded-4xl"
             src={Vector1}
@@ -110,7 +110,7 @@ const WhatWeOffer = () => {
             {images.map((image, index) => (
               <img
                 key={index}
-                className={`absolute top-8 left-23 md:top-12 md:left-35 w-[40%] lg:left-51 lg:w-[36%] ${
+                className={`absolute top-8 left-23 md:top-12 md:left-35 w-[40%] lg:top-19 lg:left-54 lg:w-[36%] ${
                   index === currentIndex ? "opacity-100" : "opacity-0"
                 }`}
                 src={image}
