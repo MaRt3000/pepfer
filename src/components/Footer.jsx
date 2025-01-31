@@ -51,11 +51,11 @@ const Footer = () => {
       </div>
 
       {/* FOOT SECTION */}
-      <div className="border-t border-[#EAECF0] pt-8 mt-8 lg:mt-0 lg:pt-0 flex flex-col  items-start lg:items-center justify-between mx-4 pb-4 md:mx-14">
+      <div className="border-t border-[#EAECF0] pt-8 mt-8 lg:mt-0 lg:pt-0 flex flex-col  items-start lg:flex-row lg:items-center justify-between mx-4 pb-4 md:mx-14">
         <h4 className="text-[#667085] py-4 md:py-8 lg:text-center text-left order-2 md:order-1">
           © 2025 360 HDSI and PEPFAR. All rights reserved.
         </h4>
-        <div className="flex flex-col  items-center gap-4 md:gap-8 order-1 md:order-2">
+        <div className="flex flex-col  items-center gap-4 md:gap-8 order-1 md:order-2 lg:flex-row">
           <ul className="flex space-x-4 md:space-x-8 text-[#667085] order-2 md:order-1">
             <li className="hover:bg-blue-100 transition duration-300 p-2">
               <a href="#" className="hover:text-[#2E6F40]">
