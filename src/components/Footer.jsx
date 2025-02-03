@@ -6,6 +6,7 @@ import fb from "../assets/fb.svg";
 import ig from "../assets/ig.svg";
 import phoneicon from "../assets/phoneicon.svg";
 import mail from "../assets/mail.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -15,24 +16,32 @@ const Footer = () => {
           <img src={logo} alt="Logo" className=" items-start   md:mx-0" />
           <ul className="flex flex-col md:flex-row  flex-wrap justify-center lg:justify-center space-x-4 md:space-x-8 text-[#667085]">
             <li className="hover:bg-blue-100 transition duration-300 p-2">
-              <a href="#home" className="hover:text-[#2E6F40]">
-                Home
-              </a>
+              <Link to="/home">
+                <a href="#home" className="hover:text-[#2E6F40]">
+                  Home
+                </a>
+              </Link>
             </li>
             <li className="hover:bg-blue-100 transition duration-300 p-2">
-              <a href="#what-we-offer" className="hover:text-[#2E6F40]">
-                What we Offer
-              </a>
+              <Link to="/what-we-offer">
+                <a href="#what-we-offer" className="hover:text-[#2E6F40]">
+                  What we Offer
+                </a>
+              </Link>
             </li>
             <li className="hover:bg-blue-100 transition duration-300 p-2">
-              <a href="#who-we-serve" className="hover:text-[#2E6F40]">
-                Who we Serve
-              </a>
+              <Link to="/who-do-we-serve">
+                <a href="#who-we-serve" className="hover:text-[#2E6F40]">
+                  Who we Serve
+                </a>
+              </Link>
             </li>
             <li className="hover:bg-blue-100 transition duration-300 p-2">
-              <a href="#features" className="hover:text-[#2E6F40]">
-                Features
-              </a>
+              <Link to="/features">
+                <a href="#features" className="hover:text-[#2E6F40]">
+                  Features
+                </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -45,7 +54,9 @@ const Footer = () => {
             Contact Us
           </h2>
           <a href="mailto:info@360hsdi.org">
-            <p className="text-xl italic">Email: info@360hsdi.org</p>
+            <p className="text-xl italic hover:underline  hover:text-blue-900">
+              Email: info@360hsdi.org
+            </p>
           </a>
         </div>
       </div>
@@ -58,26 +69,30 @@ const Footer = () => {
         <div className="flex flex-col  items-center gap-4 md:gap-8 order-1 md:order-2 lg:flex-row">
           <ul className="flex space-x-4 md:space-x-8 text-[#667085] order-2 md:order-1">
             <li className="hover:bg-blue-100 transition duration-300 p-2">
-              <a href="#" className="hover:text-[#2E6F40]">
+              <Link to="/terms-of-use" className="hover:text-[#2E6F40]">
                 Terms
-              </a>
+              </Link>
             </li>
             <li className="hover:bg-blue-100 transition duration-300 p-2">
-              <a href="#" className="hover:text-[#2E6F40]">
+              <Link to="/privacy-policy" className="hover:text-[#2E6F40]">
+                {" "}
                 Privacy
-              </a>
-            </li>
-            <li className="hover:bg-blue-100 transition duration-300 p-2">
-              <a href="#" className="hover:text-[#2E6F40]">
-                Cookies
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="flex gap-4 md:gap-8 order-1 md:order-2 ml-[-80px] lg:ml-0">
-            <img src={x} alt="Twitter" className="w-6 h-6" />
-            <img src={insocial} alt="LinkedIn" className="w-6 h-6" />
-            <img src={ig} alt="Instagram" className="w-6 h-6" />
-            <img src={fb} alt="Facebook" className="w-6 h-6" />
+            <a href="https://x.com/360Hsdi?s=09">
+              <img src={x} alt="Twitter" className="w-6 h-6" />
+            </a>
+            <a href="https://www.linkedin.com/company/360-hsdi/">
+              <img src={insocial} alt="LinkedIn" className="w-6 h-6" />
+            </a>
+            <a href="https://www.instagram.com/360hsdi?igsh=MW0yZTF5bjE2MGt6dw==">
+              <img src={ig} alt="Instagram" className="w-6 h-6" />
+            </a>
+            <a href="https://www.facebook.com/360hsdi?mibextid=ZbWKwL">
+              <img src={fb} alt="Facebook" className="w-6 h-6" />
+            </a>
           </div>
         </div>
       </div>

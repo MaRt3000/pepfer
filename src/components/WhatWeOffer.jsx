@@ -2,16 +2,13 @@ import React, { useState, useEffect } from "react";
 import hivicon from "../assets/hivicon.svg";
 import mobileicon from "../assets/mobileicon.svg";
 import careicon from "../assets/careicon.svg";
-import Vector1 from "../assets/Vector1.svg";
-import Vector2 from "../assets/Vector2.svg";
-import Vector3 from "../assets/Screen.svg";
-
-import Vector4 from "../assets/Screen2.svg";
-import Vector5 from "../assets/Screen3.svg";
-import Vector6 from "../assets/Screen4.svg";
+import mobile1 from "../assets/mobile1.svg";
+import mobile2 from "../assets/mobile2.svg";
+import mobile3 from "../assets/mobile3.svg";
+import mobile4 from "../assets/mobile4.svg";
 
 const WhatWeOffer = () => {
-  const images = [Vector3, Vector4, Vector5, Vector6];
+  const images = [mobile1, mobile2, mobile3, mobile4];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -34,25 +31,17 @@ const WhatWeOffer = () => {
         </p>
       </div>
 
-      <div className="w-full h-[24rem]  md:h-[700px] lg:w-[600px] lg:h-[550px] rounded-4xl bg-[#EDF8F0] relative    lg:max-w-xl mb-6 lg:hidden">
-        <img className="w-[50%] lg:w-[50%] rounded-4xl" src={Vector1} alt="" />
-        <div>
-          {images.map((image, index) => (
-            <img
-              key={index}
-              className={`absolute top-[10%] left-[30%] md:top-12 md:left-58 w-[40%] lg:left-51 lg:w-[36%] ${
-                index === currentIndex ? "opacity-100" : "opacity-0"
-              }`}
-              src={image}
-              alt=""
-            />
-          ))}
-        </div>
-        <img
-          className="w-[35%] md:w-[33%] absolute bottom-0 right-0 rounded-4xl"
-          src={Vector2}
-          alt=""
-        />
+      <div className="w-full h-[24rem] items-center  md:h-[700px] md:w-full lg:h-[550px] rounded-4xl relative   mb-6 lg:hidden">
+        {images.map((image, index) => (
+          <img
+            key={index}
+            className={` absolute ${
+              index === currentIndex ? "opacity-100" : "opacity-0"
+            }`}
+            src={image}
+            alt=""
+          />
+        ))}
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -100,29 +89,17 @@ const WhatWeOffer = () => {
             </div>
           </div>
         </div>
-        <div className=" hidden w-[300px] h-[300px] md:w-[500px] md:h-[500px] lg:w-full lg:h-[600px] rounded-4xl bg-[#EDF8F0] relative lg:block">
-          <img
-            className="w-[50%] lg:w-[50%] rounded-4xl"
-            src={Vector1}
-            alt=""
-          />
-          <div>
-            {images.map((image, index) => (
-              <img
-                key={index}
-                className={`absolute top-8 left-23 md:top-12 md:left-35 w-[40%] lg:top-19 lg:left-54 lg:w-[36%] ${
-                  index === currentIndex ? "opacity-100" : "opacity-0"
-                }`}
-                src={image}
-                alt=""
-              />
-            ))}
-          </div>
-          <img
-            className="w-[35%] md:w-[33%] absolute bottom-0 right-0 rounded-4xl"
-            src={Vector2}
-            alt=""
-          />
+        <div className=" hidden w-[300px] h-[300px] md:w-full md:h-[500px] lg:w-full lg:h-[600px] rounded-4xl relative lg:block ]">
+          {images.map((image, index) => (
+            <img
+              key={index}
+              className={`absolute  ${
+                index === currentIndex ? "opacity-100" : "opacity-0"
+              }`}
+              src={image}
+              alt=""
+            />
+          ))}
         </div>
       </div>
     </div>

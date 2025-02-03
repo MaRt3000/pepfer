@@ -16,8 +16,7 @@ const TheMovement = () => {
       />
       <FeatureCard
         title="Join the Movement"
-        description="Vibe360 Virtual Space App is Proudly supported by PEPFAR (President's Emergency Plan for AIDS Relief) and 360HSDI (360 Health Systems Development Initiative)"
-        subTitle="Get Started Today"
+        description="Vibe360 Virtual Space App is Proudly supported by PEPFAR (US President's Emergency Plan for AIDS Relief) and 360HSDI (360 Health Systems Development Initiative)"
         card2={applestore}
         card={Store}
         subTitle2="Scan to download"

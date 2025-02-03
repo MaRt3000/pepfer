@@ -6,16 +6,16 @@ const WhoDoWeServe = () => {
   return (
     <div
       id="who-we-serve"
-      className="bg-[#F8FCF9] p-4 lg:p-8 space-y-10  flex flex-col items-center font-['Inter']"
+      className="bg-[#F8FCF9] p-4 lg:p-8 space-y-10 flex flex-col items-center font-['Inter']"
     >
-      <div className="space-y-8 w-full md:w-[60%] text-start lg:text-center">
+      <div className="space-y-8 w-full md:w-[60%] text-start lg:text-center pt-16 ">
         <h2 className="text-2xl font-bold lg:text-5xl text-[var(--Color-Green-500,#2E6F40)] font-['Poppins']">
           Who do we Serve?
         </h2>
         <p className="text-lg lg:text-2xl leading-8 ">
-          We support Adolescents, Young People (AYP), and Key Populations (KP),
-          providing a safe space for confidential care, education, and community
-          engagement.
+          We support Adolescents and Young People (AYP), and Key Populations
+          (KP), providing a safe space for confidential care, education, and
+          community engagement.
         </p>
       </div>
 
@@ -24,7 +24,7 @@ const WhoDoWeServe = () => {
           <img className=" " src={who1} alt="" />
           <div className="space-y-4">
             <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold">
-              Adolescents, Young People (AYP)
+              Adolescents and Young People (AYP)
             </h3>
             <p className="text-lg ">
               Youth aged 15-24 seeking engaging and relatable health resources.
@@ -39,7 +39,7 @@ const WhoDoWeServe = () => {
               Key Populations (KP)
             </h3>
             <p className="text-lg ">
-              Individuals at greater risk for HIV, including inclusive,
+              Individuals at greater risk for HIV, bringing inclusive,
               specialized support for vulnerable groups.
             </p>
           </div>

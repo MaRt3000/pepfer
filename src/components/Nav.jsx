@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.svg";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -59,24 +60,32 @@ const Nav = () => {
         {/* Navigation Links (Visible on Desktop) */}
         <ul className="hidden md:flex space-x-8 text-[#667085]">
           <li className="hover:bg-blue-100 transition duration-300">
-            <a href="#home" className="hover:text-[#2E6F40]">
-              Home
-            </a>
+            <Link to="/home">
+              <a href="#home" className="hover:text-[#2E6F40]">
+                Home
+              </a>
+            </Link>
           </li>
           <li className="hover:bg-blue-100 transition duration-300">
-            <a href="#what-we-offer" className="hover:text-[#2E6F40]">
-              What we Offer
-            </a>
+            <Link to="/what-we-offer">
+              <a href="#what-we-offer" className="hover:text-[#2E6F40]">
+                What we Offer
+              </a>
+            </Link>
           </li>
           <li className="hover:bg-blue-100 transition duration-300">
-            <a href="#who-we-serve" className="hover:text-[#2E6F40]">
-              Who we Serve
-            </a>
+            <Link to="/who-do-we-serve">
+              <a href="#who-we-serve" className="hover:text-[#2E6F40]">
+                Who we Serve
+              </a>
+            </Link>
           </li>
           <li className="hover:bg-blue-100 transition duration-300">
-            <a href="#features" className="hover:text-[#2E6F40]">
-              Features
-            </a>
+            <Link to="features">
+              <a href="#features" className="hover:text-[#2E6F40]">
+                Features
+              </a>
+            </Link>
           </li>
         </ul>
 
