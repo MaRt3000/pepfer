@@ -19,7 +19,10 @@ const WhatWeOffer = () => {
   }, [images.length]);
 
   return (
-    <div id="what-we-offer" className="p-4 lg:p-18 space-y-20 ">
+    <div
+      id="what-we-offer"
+      className="p-4 lg:p-18 space-y-20 max-w-[1440px] mx-auto"
+    >
       <div className="space-y-4 pt-10 lg:space-y-8 w-full md:w-[62%]">
         <h2 className="text-2xl lg:text-5xl text-[var(--Color-Green-500,#2E6F40)] font-['poppins']">
           What We Offer

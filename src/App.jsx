@@ -19,24 +19,22 @@ export default function App() {
   return (
     <MantineProvider>
       {
-        <div className="max-w-[1440px] mx-auto">
-          <Router>
-            <ScrollToTop />
-            <Nav />
+        <Router>
+          <ScrollToTop />
+          <Nav />
 
-            <Routes>
-              <Route path="" element={<LandingPage />} />
-              <Route path="home" element={<LandingPage />} />
-              <Route path="what-we-offer" element={<WhatWeOffer />} />
-              <Route path="who-do-we-serve" element={<WhoDoWeServe />} />
-              <Route path="features" element={<Empowering />} />
-              <Route path="terms-of-use" element={<TermsOfUse />} />
-              <Route path="privacy-policy" element={<PrivacyPolicy />} />
-            </Routes>
-            <Faq />
-            <Footer />
-          </Router>
-        </div>
+          <Routes>
+            <Route path="" element={<LandingPage />} />
+            <Route path="home" element={<LandingPage />} />
+            <Route path="what-we-offer" element={<WhatWeOffer />} />
+            <Route path="who-do-we-serve" element={<WhoDoWeServe />} />
+            <Route path="features" element={<Empowering />} />
+            <Route path="terms-of-use" element={<TermsOfUse />} />
+            <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          </Routes>
+          <Faq />
+          <Footer />
+        </Router>
       }
     </MantineProvider>
   );

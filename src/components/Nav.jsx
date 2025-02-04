@@ -59,33 +59,17 @@ const Nav = () => {
 
         {/* Navigation Links (Visible on Desktop) */}
         <ul className="hidden md:flex space-x-8 text-[#667085]">
-          <li className="hover:bg-blue-100 transition duration-300">
-            <Link to="/home">
-              <a href="#home" className="hover:text-[#2E6F40]">
-                Home
-              </a>
-            </Link>
+          <li className="hover:bg-blue-100 transition duration-300 hover:text-[#2E6F40]">
+            <Link to="/home">Home</Link>
           </li>
-          <li className="hover:bg-blue-100 transition duration-300">
-            <Link to="/what-we-offer">
-              <a href="#what-we-offer" className="hover:text-[#2E6F40]">
-                What we Offer
-              </a>
-            </Link>
+          <li className="hover:bg-blue-100 transition duration-300 hover:text-[#2E6F40]">
+            <Link to="/what-we-offer">What we Offer</Link>
           </li>
-          <li className="hover:bg-blue-100 transition duration-300">
-            <Link to="/who-do-we-serve">
-              <a href="#who-we-serve" className="hover:text-[#2E6F40]">
-                Who we Serve
-              </a>
-            </Link>
+          <li className="hover:bg-blue-100 transition duration-300 hover:text-[#2E6F40]">
+            <Link to="/who-do-we-serve">Who we Serve</Link>
           </li>
-          <li className="hover:bg-blue-100 transition duration-300">
-            <Link to="features">
-              <a href="#features" className="hover:text-[#2E6F40]">
-                Features
-              </a>
-            </Link>
+          <li className="hover:bg-blue-100 transition duration-300 hover:text-[#2E6F40]">
+            <Link to="features">Features</Link>
           </li>
         </ul>
 
@@ -104,40 +88,42 @@ const Nav = () => {
         <div className="flex flex-col items-center justify-center h-full">
           <ul className="text-[#667085] text-center text-4xl space-y-8">
             <li className="hover:bg-blue-100 transition duration-300 p-4 ">
-              <a
-                href="#home"
+              <Link
+                to="/home"
                 onClick={closeMenu}
                 className="hover:text-[#2E6F40]"
               >
+                {" "}
                 Home
-              </a>
+              </Link>
             </li>
+
             <li className="hover:bg-blue-100 transition duration-300 p-4">
-              <a
-                href="#what-we-offer"
+              <Link
+                to="/what-we-offer"
                 onClick={closeMenu}
                 className="hover:text-[#2E6F40]"
               >
                 What we Offer
-              </a>
+              </Link>
             </li>
             <li className="hover:bg-blue-100 transition duration-300 p-4">
-              <a
-                href="#who-we-serve"
+              <Link
+                to="/who-do-we-serve"
                 onClick={closeMenu}
                 className="hover:text-[#2E6F40]"
               >
                 Who we Serve
-              </a>
+              </Link>
             </li>
             <li className="hover:bg-blue-100 transition duration-300 p-4">
-              <a
-                href="#features"
+              <Link
+                to="features"
                 onClick={closeMenu}
                 className="hover:text-[#2E6F40]"
               >
                 Features
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

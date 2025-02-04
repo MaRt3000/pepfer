@@ -7,7 +7,7 @@ import Empowering from "./Empowering";
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className="max-w-[1440px] mx-auto">
       <Hero />
       <WhatWeOffer />
       <WhoDoWeServe />

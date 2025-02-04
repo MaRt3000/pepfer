@@ -15,33 +15,17 @@ const Footer = () => {
         <div className="space-y-4 md:space-y-8  md:text-left items-start">
           <img src={logo} alt="Logo" className=" items-start   md:mx-0" />
           <ul className="flex flex-col md:flex-row  flex-wrap justify-center lg:justify-center space-x-4 md:space-x-8 text-[#667085]">
-            <li className="hover:bg-blue-100 transition duration-300 p-2">
-              <Link to="/home">
-                <a href="#home" className="hover:text-[#2E6F40]">
-                  Home
-                </a>
-              </Link>
+            <li className="hover:bg-blue-100 transition duration-300 p-2 hover:text-[#2E6F40]">
+              <Link to="/home">Home</Link>
             </li>
-            <li className="hover:bg-blue-100 transition duration-300 p-2">
-              <Link to="/what-we-offer">
-                <a href="#what-we-offer" className="hover:text-[#2E6F40]">
-                  What we Offer
-                </a>
-              </Link>
+            <li className="hover:bg-blue-100 transition duration-300 p-2 hover:text-[#2E6F40]">
+              <Link to="/what-we-offer">What we Offer</Link>
             </li>
-            <li className="hover:bg-blue-100 transition duration-300 p-2">
-              <Link to="/who-do-we-serve">
-                <a href="#who-we-serve" className="hover:text-[#2E6F40]">
-                  Who we Serve
-                </a>
-              </Link>
+            <li className="hover:bg-blue-100 transition duration-300 p-2 hover:text-[#2E6F40]">
+              <Link to="/who-do-we-serve">Who we Serve</Link>
             </li>
-            <li className="hover:bg-blue-100 transition duration-300 p-2">
-              <Link to="/features">
-                <a href="#features" className="hover:text-[#2E6F40]">
-                  Features
-                </a>
-              </Link>
+            <li className="hover:bg-blue-100 transition duration-300 p-2 hover:text-[#2E6F40]">
+              <Link to="/features">Features</Link>
             </li>
           </ul>
         </div>
